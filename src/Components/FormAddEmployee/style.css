@@ -1,0 +1,74 @@
+.infosList{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.formEmployee{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border-radius:8px;
+    margin-top:10px;
+}
+.FormAddEmployee{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;
+}
+.inputWithLabel{
+    display: flex;
+    flex-direction: column;
+}
+.inputWithLabel > label{
+    color: black;
+}
+.inputWithLabel > input[type=text], .inputWithLabel > input[type=date], .inputWithLabel > input[type=number]{
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    width: 100%;
+    -webkit-appearance: none;
+    color: black;
+    background: #e9e9e9;
+}
+
+hr{
+    border: 1px solid #3e424d;
+    margin: 0;
+}
+.formSubTitle{
+    color:#4d4d4d;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button{
+    padding:10px 30px;
+    border:none;
+    border-radius: 5px;
+    background: var(--primary);
+    color:white;
+    cursor: pointer;
+    width: fit-content;
+}
+button:hover{
+    background: var(--primary-darked);
+}
+.validateForm{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+}
+.errorValidation{
+    color:red;
+}
+
+@media screen and (max-width: 730px){
+    .FormAddEmployee{
+        grid-template-columns: 1fr;
+    }
+}
