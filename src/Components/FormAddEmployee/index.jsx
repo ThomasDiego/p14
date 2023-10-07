@@ -58,6 +58,10 @@ export const FormAddEmployee = () => {
             openModal({
               title: "Employee added ✅",
                 content: "The employee has been added successfully",
+                colorsModal:{
+                  background: "gray",
+                    color: "red"
+                }
             })
             setFormData(initialFormData);
         }
